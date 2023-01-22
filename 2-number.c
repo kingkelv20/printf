@@ -46,7 +46,7 @@ int print_rev(va_list ap, params_t *params)
 }
 
 /**
- * print_rot13 - prints string in rot13
+ * print_rot13 - prints string in rot13.
  * @ap: string
  * @params: the parameters struct
  *

@@ -80,7 +80,7 @@ int print_binary(va_list ap, params_t *params)
 }
 
 /**
- * print_octal - prints unsigned octal numbers
+ * print_octal - prints unsigned octal numbers.
  * @ap: the argument pointer
  * @params: the parameters struct
  *
