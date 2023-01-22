@@ -19,12 +19,12 @@ char *convert(long int num, int base, int flags, params_t *params)
 	unsigned long n = num;
 	(void)params;
 
-	if(!(flags & CONVERT_UNSIGNED) && num < 0)
+	if (!(flags & CONVERT_UNSIGNED) && num < 0)
 	{
 		n = -num;
 		sign = '-';
 	}
-	array = flags & CONVERT_LOWERCASE ? "0123456789abcdef": "0123456789ABCDEF";
+	array = flags & CONVERT_LOWERCASE ? "0123456789abcdef" : "0123456789ABCDEF";
 	ptr = &buffer[49];
 	*ptr = '\0';
 
@@ -33,7 +33,7 @@ char *convert(long int num, int base, int flags, params_t *params)
 		n /= base;
 	} while (n != 0);
 
-	if(sign)
+	if (sign)
 		*--ptr = sign;
 	return (ptr);
 
@@ -44,7 +44,7 @@ char *convert(long int num, int base, int flags, params_t *params)
  * @ap: argument pointer
  * @params: the parameters struct
  *
- * Return: bytes printed 
+ * Return: bytes printed
  */
 int print_unsigned(va_list ap, params_t *params)
 {
