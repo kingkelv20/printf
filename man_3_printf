@@ -2,7 +2,7 @@
 .SH NAME
 _printf - print data according to a format
 .SH SYNOPSIS
-.B printf FORMAT [ARGUMENT]...
+.B printf FORMAT [ARGUMENT]....
 .SH DESCRIPTION
 Prints ARGUMENT(s) based on FORMAT
 
