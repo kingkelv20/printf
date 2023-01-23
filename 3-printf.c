@@ -98,8 +98,8 @@ int print_percent(va_list ap, params_t *params)
 }
 
 /**
- * print_S - custom format specifier
- * @ap: argument pointer
+ * print_S - custom format specifier.
+ * @ap: argument pointer.
  * @params: the parameters struct
  *
  * Return: number chars printed
